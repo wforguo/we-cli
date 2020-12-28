@@ -1,0 +1,70 @@
+{
+  "name": "@vue/cli",
+  "version": "4.0.5",
+  "description": "Command line interface for rapid Vue.js development",
+  "bin": {
+    "vue": "bin/vue.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/vue-cli.git",
+    "directory": "packages/@vue/cli"
+  },
+  "keywords": [
+    "vue",
+    "cli"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuejs/vue-cli/issues"
+  },
+  "homepage": "https://cli.vuejs.org/",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vue/cli-shared-utils": "^4.0.5",
+    "@vue/cli-ui": "^4.0.5",
+    "@vue/cli-ui-addon-webpack": "^4.0.5",
+    "@vue/cli-ui-addon-widgets": "^4.0.5",
+    "boxen": "^4.1.0",
+    "chalk": "^2.4.1",
+    "cmd-shim": "^2.0.2",
+    "commander": "^2.20.0",
+    "debug": "^4.1.0",
+    "deepmerge": "^3.2.0",
+    "didyoumean": "^1.2.1",
+    "download-git-repo": "^1.0.2",
+    "ejs": "^2.7.1",
+    "envinfo": "^7.4.0",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.1",
+    "globby": "^9.2.0",
+    "import-global": "^0.1.0",
+    "inquirer": "^6.3.1",
+    "isbinaryfile": "^4.0.0",
+    "javascript-stringify": "^1.6.0",
+    "js-yaml": "^3.13.1",
+    "jscodeshift": "^0.6.4",
+    "lodash.clonedeep": "^4.5.0",
+    "lru-cache": "^5.1.1",
+    "minimist": "^1.2.0",
+    "recast": "^0.18.1",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.7",
+    "resolve": "^1.10.1",
+    "semver": "^6.1.0",
+    "shortid": "^2.2.15",
+    "slash": "^3.0.0",
+    "validate-npm-package-name": "^3.0.0",
+    "vue-jscodeshift-adapter": "^2.0.2",
+    "yaml-front-matter": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "gitHead": "17925c6ae643608853d43bb413ceccc4b8a1bd6b",
+  "_from": "@vue/cli@4.0.5",
+  "_resolved": "https://registry.npm.taobao.org/@vue/cli/download/@vue/cli-4.0.5.tgz?cache=0&sync_timestamp=1571745813034&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcli%2Fdownload%2F%40vue%2Fcli-4.0.5.tgz"
+}

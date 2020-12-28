@@ -1,0 +1,30 @@
+{
+    "name": "we-cli",
+    "version": "1.0.0",
+    "description": "we-cli",
+    "main": "bin/we.js",
+    "bin": {
+        "we": "bin/we.js"
+    },
+    "scripts": {
+        "test": "npm run test"
+    },
+    "keywords": [
+        "cli",
+        "we-cli",
+        "forguo"
+    ],
+    "author": "wforguo@qq.com",
+    "homepage": "https://github.com/wforguo/we-cli",
+    "license": "ISC",
+    "devDependencies": {
+        "chalk": "^3.0.0",
+        "commander": "^4.1.0",
+        "download-git-repo": "^1.1.0",
+        "figlet": "^1.2.4",
+        "fs-extra": "^8.1.0",
+        "inquirer": "^7.0.3",
+        "npm-run": "^5.0.1",
+        "ora": "^4.0.3"
+    }
+}
