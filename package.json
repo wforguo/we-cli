@@ -15,7 +15,7 @@
         "forguo"
     ],
     "author": "wforguo@qq.com",
-    "homepage": "https://github.com/wforguo/we-cli",
+    "homepage": "https://github.com/wforguo/we-cli#Readme",
     "license": "ISC",
     "devDependencies": {
         "chalk": "^3.0.0",
