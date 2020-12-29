@@ -1,0 +1,15 @@
+__tests__
+__mocks__
+.version
+/node_modules
+/.idea
+
+# Vs Code
+.vscode/
+
+dist/
+deploy_versions/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
