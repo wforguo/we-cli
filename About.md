@@ -1,12 +1,53 @@
 # 从0搭建一个Cli
 
-[参考](https://zhuanlan.zhihu.com/p/38730825)
+> 参考
+
+[用Node.js开发一个Command Line Interface (CLI)](https://zhuanlan.zhihu.com/p/38730825)
+
+[从零开发一个Node Cli](https://juejin.cn/post/6844904080830103560)
 
 ## 前沿
 
 ## 准备
 
+node > 10.0.0
+
 ## 开始
+
+### 搭建
+
+- 创建`cli`对应的文件夹
+
+`mkdir we-cli && cd we-cli`
+
+- 创建`package`
+
+`npm init`
+
+添加入库文件配置
+
+```json
+   "main": "bin/we.js",
+    "bin": {
+        "we": "bin/we.js"
+    }
+```
+
+- 创建入口文件
+
+`mkdir bin && cd bin`
+
+`touch we.js`
+
+并输出
+
+`console.log(this is my cli);`
+
+- 全局使用
+
+在命令行输入 `npm link` 或 `npm install -g` 将`cli`安装到全局，
+
+这样就可以直接使用 `we` 命令了
 
 ## 用到的组件
 
@@ -26,10 +67,17 @@
 
 [参考](https://juejin.cn/post/6877768129745944589)
 
+- nrm ls
+
+列出所有的`npm`源
+  
 - npm login
 
 - npm publish
 
 ## 使用
 
+
 ## 版本
+
+v0.1.0:
