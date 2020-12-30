@@ -21,3 +21,15 @@
 - More
 
 [top-command-line-tools](https://stackify.com/top-command-line-tools/)
+
+## 发布
+
+[参考](https://juejin.cn/post/6877768129745944589)
+
+- npm login
+
+- npm publish
+
+## 使用
+
+## 版本

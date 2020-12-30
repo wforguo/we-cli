@@ -2,7 +2,6 @@ __tests__
 __mocks__
 .version
 /node_modules
-/.idea
 
 # Vs Code
 .vscode/
@@ -13,3 +12,4 @@ deploy_versions/
 .rn_temp/
 node_modules/
 .DS_Store
+yarn-error.log

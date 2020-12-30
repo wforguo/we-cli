@@ -1,17 +1,14 @@
-# we-cli
+# We-Cli
 
-[we-cli](https://github.com/wforguo/we-cli)
+[We-Cli](https://github.com/wforguo/we-cli)
 
 ## 使用
-
-**`Mac`全局需要加上`sudo`**
 
 - npm
 
 ``` sh
 npm install
 npm install -g
-we
 ```
 
 - yarn
@@ -19,10 +16,7 @@ we
 ``` sh
 yarn install
 yarn install -g
-we
 ```
-
-[yarn基本使用操作](https://www.jianshu.com/p/b306a19a64ee)
 
 ## 版本要求
 
@@ -38,18 +32,36 @@ node -v
 
 ## 功能
 
-#### `cli`创建项目
+### 1、`cli`创建项目
 
-- 模板选择
+#### 模板选择
 
-- 项目创建
+- `Vue`模板
+- `React`模板
+- `Taro`模板
+- `Antd`模板
 
-#### `cli`创建页面
+#### 2、项目创建
 
-- `cli`创建`Vue`组件
-- `cli`创建`React`组件
+模板选择之后开始`clone`项目
 
-#### 组件安装
+### 3、`cli`创建组件
 
-- `cli`安装组件库
+- 创建`Vue`组件
+- 创建`React`组件
+
+### 4、`cli`安装插件
+
+- 封装常用插件
+
+比如`axios`的封装
+
+### 5、`cli`安装UI组件库
+
+- 封装常用`UI`组件
+
+## 版本
+
+### v1.0.0
+
 
