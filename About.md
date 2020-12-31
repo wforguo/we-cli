@@ -58,6 +58,7 @@ node > 10.0.0
 - [shelljs](https://link.zhihu.com/?target=https%3A//github.com/shelljs/shelljs) node.js运行shell命令组件
 - [blessed-contrib](https://link.zhihu.com/?target=https%3A//github.com/yaronn/blessed-contrib) 命令行可视化组件
 - [inquirer](https://link.zhihu.com/?target=https%3A//github.com/SBoudrias/Inquirer.js) 命令行交互信息收集组件
+- [log-symbols](https://github.com/sindresorhus/log-symbols) 可以在终端上显示出 √ 或 × 等的图标。
 
 - More
 
