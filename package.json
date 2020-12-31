@@ -7,20 +7,25 @@
     "bin": {
         "we": "bin/we.js"
     },
-    "scripts": {
-        "test": "npm run test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/wforguo/we-cli.git"
-    },
     "keywords": [
         "cli",
         "we-cli",
         "forguo"
     ],
+    "scripts": {
+        "test": "npm run test",
+        "commit": "git cz",
+        "release": "standard-version"
+    },
     "homepage": "https://github.com/wforguo/we-cli/blob/master/Readme.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wforguo/we-cli.git"
+    },
     "devDependencies": {
+        "commitizen": "^4.2.2",
+        "cz-customizable": "^6.3.0",
+        "standard-version": "^9.1.0"
     },
     "dependencies": {
         "chalk": "^3.0.0",
@@ -32,5 +37,10 @@
         "log-symbols": "^4.0.0",
         "npm-run": "^5.0.1",
         "ora": "^4.0.3"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-customizable"
+        }
     }
 }
