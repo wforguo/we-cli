@@ -31,6 +31,7 @@
         "chalk": "^3.0.0",
         "commander": "^4.1.0",
         "download-git-repo": "^1.1.0",
+        "execa": "^5.0.0",
         "figlet": "^1.2.4",
         "fs-extra": "^8.1.0",
         "inquirer": "^7.0.3",

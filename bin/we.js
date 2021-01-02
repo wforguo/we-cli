@@ -7,7 +7,7 @@
  */
 const program = require('commander');
 const chalk = require("chalk");
-const getVersions = require('../lib/util/getVersions');
+const { getVersions } = require('../lib/util');
 
 program
     .version(getVersions())
