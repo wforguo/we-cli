@@ -24,6 +24,7 @@
     },
     "devDependencies": {
         "commitizen": "^4.2.2",
+        "cz-conventional-changelog": "^3.3.0",
         "cz-customizable": "^6.3.0",
         "standard-version": "^9.1.0"
     },
@@ -35,9 +36,11 @@
         "figlet": "^1.2.4",
         "fs-extra": "^8.1.0",
         "inquirer": "^7.0.3",
+        "ip": "^1.1.5",
         "log-symbols": "^4.0.0",
         "npm-run": "^5.0.1",
-        "ora": "^4.0.3"
+        "ora": "^4.0.3",
+        "webpack-dev-server": "^3.11.1"
     },
     "config": {
         "commitizen": {
