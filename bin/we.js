@@ -47,6 +47,7 @@ program
         process.exitCode = 1
     })
 
+// 解析命令行参数
 program.parse(process.argv)
 
 if (!process.argv.slice(2).length) {

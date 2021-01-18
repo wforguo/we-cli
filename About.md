@@ -1,12 +1,64 @@
-# 从0搭建一个Cli
+# 从0搭建一个Node Cli
 
 > 参考
 
 [用Node.js开发一个Command Line Interface (CLI)](https://zhuanlan.zhihu.com/p/38730825)
 
-[从零开发一个Node Cli](https://juejin.cn/post/6844904080830103560)
+[开发前端 CLI 脚手架思路解析](https://mp.weixin.qq.com/s/iRN4CxP1gFpwyoInUeZtrw)
 
 ## 前沿
+
+## git cz使用
+
+### git cz
+
+在`package`中配置：
+
+- 默认配置选项
+  
+```json
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    }
+```
+
+- 自定义提交选项
+  
+```json
+    "config": {
+        "commitizen": {
+             "path": "cz-customizable"
+        }
+    }
+```
+
+### npm release
+
+生产`changelog`
+
+- 指定版本
+  
+```bash
+npm run release -- --release-as 1.1.0
+```
+
+- 主版本号
+
+```bash
+npm run release -- --release-as major
+```  
+
+生成`2`.0.0
+
+- 次版本号
+
+```bash
+npm run release -- --release-as minor
+```  
+
+生成2.`2`.0
 
 ## 准备
 
@@ -78,7 +130,57 @@ node > 10.0.0
 
 ## 使用
 
-
 ## 版本
 
 v0.1.0:
+
+## 心得
+
+### 关于Node
+
+#### process.cwd()、__dirname和__filename的区别
+
+- process.cwd() 
+    
+方法会返回 `Node.js` 进程的当前工作目录。
+
+- __dirname 
+  
+当前模块的目录名。 相当于 `__filename` 的 `path.dirname()`。
+
+- __filename 
+  
+当前模块的文件名。 这是当前的模块文件的绝对路径（符号链接会被解析）。
+
+
+从 `/Users/mjr` 运行 `node example.js`：
+
+```javascript
+console.log(process.cwd());
+// 打印: /Users/mjr
+console.log(__filename);
+// 打印: /Users/mjr/example.js
+console.log(__dirname);
+// 打印: /Users/mjr
+```
+
+当我们在 `webpackApp` 中执行 `we serve`,会打印出
+
+```javascript
+process.cwd() /Users/forguo/work/mine/we-cli/webpackApp
+__dirname /Users/forguo/work/mine/we-cli/lib/config/webpack
+__filename /Users/forguo/work/mine/we-cli/lib/config/webpack/webpack.dev.js
+```
+
+#### path.resolve()、path.join()的区别
+
+- path.join()
+
+`path.join()` 方法会将所有给定的 `path` 片段连接到一起（使用平台特定的分隔符作为定界符），然后规范化生成的路径。
+
+长度为零的 `path` 片段会被忽略。 如果连接后的路径字符串为长度为零的字符串，则返回 '.'，表示当前工作目录。
+
+- path.resolve()
+
+`path.resolve()` 方法会将路径或路径片段的序列解析为绝对路径。
+

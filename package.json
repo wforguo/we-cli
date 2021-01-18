@@ -15,7 +15,9 @@
     "scripts": {
         "test": "npm run test",
         "commit": "git cz",
-        "release": "standard-version"
+        "release": "standard-version",
+        "release:alpha": "standard-version --prerelease alpha",
+        "release:rc": "standard-version --prerelease rc"
     },
     "homepage": "https://github.com/wforguo/we-cli/blob/master/Readme.md",
     "repository": {
@@ -26,25 +28,32 @@
         "commitizen": "^4.2.2",
         "cz-conventional-changelog": "^3.3.0",
         "cz-customizable": "^6.3.0",
+        "extract-text-webpack-plugin": "^3.0.2",
         "standard-version": "^9.1.0"
     },
     "dependencies": {
         "chalk": "^3.0.0",
         "commander": "^4.1.0",
+        "copy-webpack-plugin": "^7.0.0",
         "download-git-repo": "^1.1.0",
         "execa": "^5.0.0",
         "figlet": "^1.2.4",
+        "friendly-errors-webpack-plugin": "^1.7.0",
         "fs-extra": "^8.1.0",
+        "html-webpack-plugin": "^4.5.1",
         "inquirer": "^7.0.3",
         "ip": "^1.1.5",
         "log-symbols": "^4.0.0",
         "npm-run": "^5.0.1",
         "ora": "^4.0.3",
-        "webpack-dev-server": "^3.11.1"
+        "webpack": "^5.15.0",
+        "webpack-dev-server": "^3.11.1",
+        "webpack-merge": "^5.7.3",
+        "webpackbar": "^5.0.0-3"
     },
     "config": {
         "commitizen": {
-            "path": "cz-customizable"
+            "path": "cz-conventional-changelog"
         }
     }
 }
